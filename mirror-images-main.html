@@ -231,6 +231,14 @@ nav li a,
   text-decoration: none;
   color: var(--navigationText);
 }
+	
+nav a[data-filter] i {
+  opacity: 0.5;
+}
+ 
+ nav a.default i {
+  opacity: 1;
+}
 
 nav li i,
 .character_nav li i {
@@ -966,7 +974,7 @@ nav,
 
     <!--filters-->
     <!--COPY HERE-->
-    <li><a href="#" title="show all" data-filter="*" class="tooltip">
+    <li><a href="#" title="show all" data-filter="*" class="default tooltip">
       <i class="far fa-star"></i></a></li>
     <!--COPY END-->
     <li><a href="#" title="filter 1" data-filter=".f1" class="tooltip">
