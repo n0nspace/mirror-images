@@ -328,9 +328,12 @@ nav li i {
 }
 
 .item-content a {
-  color: var(--accentColor);
+  color: var(--textColor);
   text-decoration: none;
-  box-shadow: inset 0 -5px var(--accentColor);
+}
+
+.item-content a:hover {
+  color: var(--accentColor);
 }
 
 .item-head i {
@@ -425,7 +428,8 @@ nav li i {
 #nnspc,
 #nnspc a,
 nav,
-.grid-item {
+.grid-item,
+.item-content a {
   transition: all 0.5s ease;
 }
 
@@ -507,16 +511,14 @@ nav,
         </div>
         <div class="desc has-border-radius lighter-shadow">
           <ul>
-            <li>link one</li>
-            <li>link two</li>
-            <li>link three</li>
-            <li>link four</li>
-            <li>link five</li>
-            <li>link one</li>
-            <li>link two</li>
-            <li>link three</li>
-            <li>link four</li>
-            <li>link five</li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
           </ul>
         </div>
        </div>
@@ -535,11 +537,12 @@ nav,
         </div>
         <div class="desc has-border-radius lighter-shadow">
           <ul>
-            <li>link one</li>
-            <li>link two</li>
-            <li>link three</li>
-            <li>link four</li>
-            <li>link five</li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
           </ul>
         </div>
        </div>
@@ -558,14 +561,13 @@ nav,
         </div>
         <div class="desc has-border-radius lighter-shadow">
           <ul>
-            <li>link one</li>
-            <li>link two</li>
-            <li>link three</li>
-            <li>link four</li>
-            <li>link five</li>
-            <li>link one</li>
-            <li>link two</li>
-            <li>link three</li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
           </ul>
         </div>
        </div>
@@ -584,14 +586,13 @@ nav,
         </div>
         <div class="desc has-border-radius lighter-shadow">
           <ul>
-            <li>link one</li>
-            <li>link two</li>
-            <li>link three</li>
-            <li>link four</li>
-            <li>link five</li>
-            <li>link one</li>
-            <li>link two</li>
-            <li>link three</li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
           </ul>
         </div>
        </div>
@@ -610,11 +611,16 @@ nav,
         </div>
         <div class="desc has-border-radius lighter-shadow">
           <ul>
-            <li>link one</li>
-            <li>link two</li>
-            <li>link three</li>
-            <li>link four</li>
-            <li>link five</li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
+            <li><a href="">link one</a></li>
           </ul>
         </div>
        </div>
