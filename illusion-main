@@ -646,9 +646,6 @@ nav,
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css" />
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
-
-  <!--PINTEREST-->
-  <script defer src="https://assets.pinterest.com/js/pinit.js"></script>
 	
    <!--MIRROR IMAGES SCRIPTS-->
   <script type="text/javascript" src="https://dl.dropbox.com/s/mh07ykoqpbwvdei/mirror-images.js"></script>
