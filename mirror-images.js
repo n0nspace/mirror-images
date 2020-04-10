@@ -18,17 +18,13 @@ $(document).ready(function() {
 
     $('nav a').on('click', function() {
       var filterValue = $(this).attr('data-filter');
-<<<<<<< HEAD
 
       $("nav a[data-filter] i").css({"opacity" : "0.5"});
       $(this).children("i").css({"opacity" : "1"});
 
-=======
-      
       $("nav a[data-filter] i").css({"opacity" : "0.5"});
       $(this).children("i").css({"opacity" : "1"});
-      
->>>>>>> fc6753275e8fe8c323ca0cf0ca2a5f6d67051318
+
       $grid.isotope({
         filter: filterValue
       });
