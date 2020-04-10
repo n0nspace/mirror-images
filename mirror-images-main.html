@@ -27,6 +27,13 @@
   <!--FONT AWESOME-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
+  <!--PAGE SETTINGS-->
+  <script>
+    /*This lets you enable/disable different colors per tab.
+      true = enabled, false = disabled*/
+    var colorPerTab = false;
+  </script>
+
 <style>
 
 /*INSTRUCTIONS*/
@@ -97,6 +104,23 @@ Links:
 
   /*responsive*/
   --mediaBreak1: var(--barWidth) + var(--postWidth) + 50px);
+
+  /*color per tab if enabled above*/
+
+  --accentColor-1: #F5C2A2;
+  --accentText-1: #FFF;
+  --accentColor-2: #303A36;
+  --accentText-2: #FFF;
+  --accentColor-3: #E1313B;
+  --accentText-3: #FFF;
+  --accentColor-3: #4E4C3D;
+  --accentText-3: #FFF;
+  --accentColor-4: #B08A71;
+  --accentText-4: #FFF;
+  --accentColor-5: #B69F97;
+  --accentText-5: #FFF;
+  --accentColor-6: #A97F5C;
+  --accentText-6: #FFF;
 }
 
 /*reset styles*/
@@ -904,8 +928,8 @@ nav,
 
 .cconnections li:hover .overlay,
 .cconnections li:hover .overlay-text,
-.grid-item > a:hover .overlay,
-.grid-item > a:hover .overlay-text,
+.grid-item:hover > a .overlay,
+.grid-item:hover > a .overlay-text,
 .is-visible {
   opacity: 1;
 }
@@ -1325,7 +1349,7 @@ adipiscing elit.
               <!--pinterest-->
               <div class="row cpinterest">
                 <!--add your pinterest board url-->
-                <a data-pin-do="embedBoard" data-pin-board-width="700" data-pin-scale-height="500" data-pin-scale-width="60" href="YOURBOARDURL"></a>
+                <a data-pin-do="embedBoard" data-pin-board-width="700" data-pin-scale-height="500" data-pin-scale-width="60" href="https://www.pinterest.se/hellscapist/misc-settings/"></a>
               </div>
 
              </div><!--col 2 end-->
@@ -1483,7 +1507,7 @@ adipiscing elit.
               <!--pinterest-->
               <div class="row cpinterest">
                 <!--add your pinterest board url-->
-                <a data-pin-do="embedBoard" data-pin-board-width="700" data-pin-scale-height="500" data-pin-scale-width="60" href="YOURBOARDURL"></a>
+                <a data-pin-do="embedBoard" data-pin-board-width="700" data-pin-scale-height="500" data-pin-scale-width="60" href="https://www.pinterest.se/hellscapist/misc-settings/"></a>
               </div>
 
              </div><!--col 2 end-->
@@ -1506,80 +1530,11 @@ adipiscing elit.
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
 
+  <!--MIRROR IMAGES SCRIPTS-->
+  <script type="text/javascript" src="https://dl.dropbox.com/s/mh07ykoqpbwvdei/mirror-images.js"></script>
+
   <!--PINTEREST-->
   <script defer src="https://assets.pinterest.com/js/pinit.js"></script>
-  <script>
 
-  $(document).ready(function() {
-
-  function buildLayout() {
-    //initialise isotope
-    const $grid = $('.grid_wrapper').isotope({
-      itemSelector: '.grid-item',
-      masonry: {
-        fitWidth: true
-      }
-    });
-
-   $('.grid-item').each(function(i){
-     setTimeout(function(){
-     $('.grid-item').eq(i).addClass('is-visible');
-   }, 100 * i);
-   });
-
-
-    $('nav a').on('click', function() {
-      var filterValue = $(this).attr('data-filter');
-      $grid.isotope({
-        filter: filterValue
-      });
-      e.preventDefault();
-    });
-
-  }
-
-  buildLayout();
-
-  /*TABS*/
-  function openTab(attr, tab) {
-    var page = $(tab+attr);
-
-    if (page.is(":hidden")) {
-      $('.content_wrapper.grid').fadeOut(function() {
-         page.fadeIn(800);
-         $("#sidebar_button").prop("checked", true);
-         page.addClass('active');
-      });
-    }
-  }
-
-  var hash = $.trim(window.location.hash);
-  if (hash) {
-    openTab('.tab', hash);
-  }
-
-  $(".grid-item > a").on('click', function() {
-    let attr = $(this).attr('href');
-    openTab(attr, '.tab');
-  });
-
-  $("#sidebar_controls").on("click", function() {
-    if ($(".active").is(":visible")) {
-      $(".active").fadeOut(function() {
-        $(".content_wrapper.grid").fadeIn();
-      });
-    }
-      else {
-        $('#sidebar_button').prop('checked', true);
-      }
-  });
-
-  /*tooltips*/
-  $('.tooltip').tooltipster({
-   side: 'right'
-});
-
-}); /*document ready*/
-  </script>
 </body>
 </html>
