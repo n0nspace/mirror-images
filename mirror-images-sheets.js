@@ -13,6 +13,7 @@ $(document).ready(function() {
 
   function afterTabletop(){
     tabFunctions();
+    feather.replace();
   }
 
   function showInfo(data, tabletop) {
@@ -70,8 +71,8 @@ $(document).ready(function() {
   $('nav a').on('click', function() {
       var filterValue = $(this).attr('data-filter');
 
-      $("nav a[data-filter] i").css({"opacity" : "0.5"});
-      $(this).children("i").css({"opacity" : "1"});
+      $("nav a[data-filter] > *").css({"opacity" : "0.5"});
+      $(this).children().css({"opacity" : "1"});
 
       $grid.isotope({
         filter: filterValue
