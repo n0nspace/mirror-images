@@ -107,6 +107,8 @@ $(document).ready(function() {
   /*tooltips*/
   $('.tooltip').tooltipster({
    side: 'right'
-});
+  });
+
+  feather.replace();
 
 }); /*document ready*/
