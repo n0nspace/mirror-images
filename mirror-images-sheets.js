@@ -14,6 +14,9 @@ $(document).ready(function() {
   function afterTabletop(){
     tabFunctions();
     feather.replace();
+    $('.tooltip').tooltipster({
+     side: 'right'
+    });
   }
 
   function showInfo(data, tabletop) {
