@@ -15,7 +15,9 @@ $(document).ready(function() {
     tabFunctions();
     feather.replace();
     $('.tooltip').tooltipster({
-     side: 'right'
+     side: 'right',
+     trackOrigin: 'true',
+     arrow: 'false'
     });
   }
 
