@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-    <!--MIRROR IMAGES w/ Spreadsheets by @nonspace.
+    <!--MIRROR IMAGES w/ Spreadsheets 2.0 by @nonspace.
     Find more of my work at https://nonspace.tumblr.com
 
     Don't steal.
@@ -30,10 +30,7 @@
   <!--TABLETOP.JS-->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.6.2/tabletop.min.js"></script>
 
-  <!--MIRROR IMAGES SCRIPTS-->
-  <script type="text/javascript" src="https://dl.dropbox.com/s/wt1ks6h1p7ugmpg/mirror-images-sheets.js"></script>
-
- <!--PAGE SETTINGS-->
+  <!--PAGE SETTINGS-->
   <script>
     /*TO GET THE SHEET ID:
     1. Go to your spreadsheet > File > Publish to web.
@@ -51,8 +48,12 @@
 
     /*This lets you enable/disable different colors per tab.
       true = enabled, false = disabled*/
-    var colorPerTab = true;
+    var colorPerTab = false;
+
   </script>
+
+  <!--SHEET INTEGRATION-->
+  <script type="text/javascript" src="https://www.dl.dropboxusercontent.com/s/u3w007exkc417gy/mirror-images-sheets-2-0.js"></script>
 
 <style>
 
@@ -1151,6 +1152,9 @@ nav,
 
      </div><!--grid_wrapper end-->
 
+     <!--GRID END-------------------------------------------------------->
+
+
      <!--TAB TEMPLATE-->
      <script id="handlebars-template-tabs" type="text/x-handlebars-template">
       {{#each []}}
@@ -1312,18 +1316,6 @@ nav,
       </script>
 
     </div><!--content_wrapper.grid end-->
-<!--GRID END--------------------------------------------------------------->
-
-<!--TABS------------------------------------------------------------------->
-
-    <!--COPY TAB START HERE-->
-    <!--CHARACTER TAB 1-->
-    <!--change ID here-->
-
-   <!--COPY TAB END-->
-
-
-   <!--PASTE NEW TAB HERE-->
 
   </div><!--container-->
 
@@ -1343,8 +1335,8 @@ nav,
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
 
   <script>
-    feather.replace()
+    feather.replace();
   </script>
-  
+
 </body>
 </html>
