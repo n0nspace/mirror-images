@@ -22,6 +22,7 @@ init();
 
 //apply data to templates
 function createContent(data, templateNum) {
+  $(document).ready(function() {
   //iterate through templates
   for (i = 0; i < templateList.length; i++) {
     let source = $(templateList[i][0]).html();
@@ -32,6 +33,7 @@ function createContent(data, templateNum) {
   }
 
   contentLoaded();
+  });
 }
 
 //FORMATING FUNCTIONS
