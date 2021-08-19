@@ -27,9 +27,6 @@
   <!--HANDLEBARS.JS-->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
 
-  <!--PAPA PARSE.JS-->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
-
   <!--PAGE SETTINGS-->
   <script>
     /*TO GET THE SHEET ID:
@@ -39,13 +36,21 @@
     3. File > Share > Anyone with link can share. This URL is important.
     4. Copy the following string from the URL and paste it in sheetID:
        Example:
-
        https://docs.google.com/spreadsheets/d/
          1jKi9Knw7e5qr4bXr_zQib8FwpGM7E6eqRx1tH3JruIA (this part)
-      /edit?usp=sharing*/
+      /edit?usp=sharing
+      
+    TO GET API KEY:
+    1. Go to https://console.cloud.google.com/projectselector2/apis/dashboard 
+    (of the account the sheet is under)
+    2. Create new project
+    3. Create credentials, choose API key (copy this)
+    4. Libraries > search for Google Sheets > Enable*/
 
-    var sheetID = '1jKi9Knw7e5qr4bXr_zQib8FwpGM7E6eqRx1tH3JruIA';
-
+    const sheetID = '1jKi9Knw7e5qr4bXr_zQib8FwpGM7E6eqRx1tH3JruIA';
+    const sheetTab = 'MAIN';
+    const APIkey = 'AIzaSyDJvrhztfzASekzVzdmCGFbBiZT9yW5bk0';
+    
     /*This lets you enable/disable different colors per tab.
       true = enabled, false = disabled*/
     var colorPerTab = false;
